@@ -56,19 +56,3 @@ struct ListNode* reverseList(struct ListNode* head) {
     }
     return prev;
 }
-
-struct ListNode* createNode(int val) {
-    struct ListNode* newNode = (struct ListNode*)malloc(sizeof(struct ListNode));
-    newNode->val = val;
-    newNode->next = NULL;
-    return newNode;
-}
-
-void printList(struct ListNode* head) {
-    struct ListNode* temp = head;
-    while (temp != NULL) {
-        printf("%d ", temp->val);
-        temp = temp->next;
-    }
-    printf("\n");
-}
